@@ -1,15 +1,19 @@
 {
   "name": "proyecto",
+  "homepage": "https://mvespin1.github.io/proyecto_PIC_3P",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.7",
     "core-js": "^3.8.3",
+    "gh-pages": "^6.1.1",
     "vue": "^3.2.13",
     "vue-router": "^4.3.0",
     "vuetify": "^3.5.7"
