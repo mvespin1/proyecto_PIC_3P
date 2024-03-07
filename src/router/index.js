@@ -4,8 +4,6 @@ import CrearComponent from '../components/crud/Crear-component.vue';
 import EditarComponent from '../components/crud/Editar-component.vue';
 import ListarComponent from '../components/crud/Listar-component.vue';
 import UsuarioModulo from '../components/home/UsuarioModulo-component.vue';
-import LoginComponent from '../components/Login-component.vue';
-import RegistroComponent from '../components/Registro-component.vue';
 
 const routes = [
   {
@@ -32,17 +30,7 @@ const routes = [
     path: '/usuario',
     name: 'Usuario',
     component: UsuarioModulo
-  },
-  {
-    path: '/',
-    name: 'Login',
-    component: LoginComponent
-  },
-  {
-    path: '/registro',
-    name: 'Registro',
-    component: RegistroComponent
-  },
+  }
 ];
 
 const router = createRouter({
